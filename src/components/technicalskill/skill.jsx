@@ -1,0 +1,119 @@
+import React, { useState } from "react";
+import "./skill.css";
+import Cards from "../reuseablecard/cards";
+
+const TechnicalSkills = () => {
+  const [activetab, setActivetab] = useState("All");
+
+  const skillsData = {
+    "Web Development": [
+      {
+        name: "HTML5",
+        level: "85",
+        bar: 86,
+        tag: "Beginner",
+      },
+      {
+        name: "CSS3",
+        level: "65",
+        bar: 45,
+        tag: "Intermediate",
+      },
+      {
+        name: "JS",
+        level: "67",
+        bar: 98,
+        tag: "Beginner",
+      },
+      {
+        name: "ReactJS",
+        level: "32",
+        bar: 76,
+        tag: "Beginner",
+      },
+    ],
+
+    "Graphic Designing": [
+      {
+        name: "Figma",
+        level: "78",
+        bar: 35,
+        tag: "Expert",
+      },
+
+      {
+        name: "PhotoShop",
+        level: "78",
+        bar: 85,
+        tag: "Expert",
+      }, 
+
+      {
+        name: "Illustrator",
+        level: "98",
+        bar: 95,
+        tag: "Expert",
+      },
+
+      {
+        name: "Indesign",
+        level: "25",
+        bar: 35,
+        tag: "Beginner",
+      },
+
+      {
+        name: "Lightroom",
+        level: "18",
+        bar: 35,
+        tag: "Beginner",
+      },
+
+
+    ],
+
+
+  };
+
+  const categories = ["All", ...Object.keys(skillsData)];
+
+  console.log(categories);
+
+  const displayedSkills =
+    activetab === "All"
+      ? Object.values(skillsData).flat()
+      : skillsData[activetab];
+
+  console.log(displayedSkills, "SKILLS");
+
+  return (
+    <div>
+      <h1>Technical Skills</h1>
+
+      <div>
+        {categories.map((btn, index) => (
+          <button
+            className="active"
+            key={index}
+            onClick={() => setActivetab(btn)}
+          >
+            {btn}
+          </button>
+        ))}
+      </div>
+
+      <div>
+        {displayedSkills.map((skills) => (
+          <Cards
+            name={skills.name}
+            level={skills.level}
+            bar={skills.bar}
+            tag={skills.tag}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default TechnicalSkills;
