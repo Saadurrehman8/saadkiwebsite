@@ -1,6 +1,6 @@
 import React from "react";
 import "./herosections.css";
-import myimage from "../../assets/saad.png";
+import myimage from "../../assets/saaad.png.jpg";
 import { CiDesktopMouse2 } from "react-icons/ci";
 
 const HeroSection = () => {
@@ -12,12 +12,12 @@ const HeroSection = () => {
       <h1 className="herosection-heading">Frontend ReactJS Developer + Graphic Designer</h1>
 
       <span className="herosection-span">
-        Building intelligent solutions that transform ideas into reality
+        Learning, building, and experimenting with creative web solutions
       </span>
 
       <p className="herosection-paragraph">
-        Specializing in Machine Learning, Full-Stack Development, and
-        cutting-edge AI technologies
+        Currently exploring ReactJS, Frontend Development, and Graphic Design
+       Passionate about turning ideas into designs and interactive websites
       </p>
 
       <div className="herosection-button">

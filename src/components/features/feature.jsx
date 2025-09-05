@@ -5,34 +5,34 @@ import Typewriter from "typewriter-effect";
 const Features = () => {
   const features = [
     {
-      value: "50+",
-      title: "Certifications",
+      value: "10+ Designs",
+      title: "Graphic Creations",
     },
     {
-      value: "20+",
-      title: "Research Ideas",
+      value: "5+ Frontend Demos",
+      title: "ReactJS Interfaces",
     },
     {
-      value: "10+",
-      title: "Projects",
+      value: "Learning Daily",
+      title: "Step_by_step Growth",
     },
     {
-      value: "24/7",
-      title: "Innovation",
+      value: "Creative + Code",
+      title: "Designing with Logic",
     },
   ];
 
   return (
     <div className="features">
       <div className="top-features">
-        <span className="features-tag">Tech Phiosophy</span>
+        <span className="features-tag">My Journey</span>
 
         <Typewriter
           options={{
             strings: [
-              "The future belongs to those who",
-              "Deep Learning, Deeper Insights",
-              "Algorithms are the recipes for digital magic",
+              "Learning ReactJS, one component at a time",
+              "Designing graphics that inspire and engage",
+              "Growing skills at the intersection of design & code",
             ],
             autoStart: true,
             loop: true,
@@ -41,8 +41,7 @@ const Features = () => {
         />
 
         <p>
-          Exploring the intersection of innovation, technology, and human
-          potential through every line of code
+          Exploring creativity and code building beginner level ReactJS interfaces and designing eye catching graphics with passion.
         </p>
       </div>
 

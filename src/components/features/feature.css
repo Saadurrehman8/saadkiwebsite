@@ -5,7 +5,7 @@
     align-items: center;
 padding: 2rem   ;
 gap: 4rem;
-    background-color: rgb(248, 248, 248);
+    
 }
 
 
@@ -57,7 +57,7 @@ gap: 4rem;
 
 
 .features-card div{
-    background-color: rgba(128, 128, 128, 0.246);
+    background-color: gainsboro;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.7rem;
-    background-color: rgb(234, 234, 234);
+    background-color: gainsboro;
 }
 
 
@@ -20,6 +20,6 @@
     outline: none;
     border: none;
     border-radius: 1rem;
-    background-color: rgba(33, 208, 33, 0.577);
+    background-color: rgba(54, 245, 54, 0.577);
     font-weight: 600;
 }

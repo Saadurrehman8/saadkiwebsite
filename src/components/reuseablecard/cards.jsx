@@ -2,27 +2,28 @@ import React from "react";
 
 import "./cards.css";
 
-const Cards = ({ name, level, bar, tag }) => {
+  const Cards = ({ name, level, bar, tag }) => {
   return (
-    <div>
-      <div>
+    <div className="card">
+      <div className="card-top">
         <h3>{name}</h3>
 
         <span>{level}</span>
       </div>
 
-      <div>
-        <span>{bar}</span>
-
-        <div className="skill-bar">
-          <span className="skill-fill"></span>
-          <span className="skill-cap"></span>
+      <div className="bar">
+        <div className="bar" style={{ width: bar, backgroundColor: "black" }}>
+          <span className="bar-percent">{bar}</span>
         </div>
-
-        <span>{tag}</span>
       </div>
+
+      <div className="card-tag">
+        <h5>{tag}</h5>
+      </div>
+
     </div>
   );
 };
+
 
 export default Cards;
